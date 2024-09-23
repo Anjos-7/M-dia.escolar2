@@ -1,0 +1,121 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: "Barlow", sans-serif;
+    font-weight: 700;
+    margin: 0;
+}
+* {
+    text-align: center;
+}
+
+input[type="text"] {
+    width: 90px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    font-size: 16px;
+}
+
+#name {
+    width: 320px;
+    height: 40px;
+    margin-bottom: 20px;
+
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.6s ease, transform 0.6s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.25);
+}
+
+
+#res {
+    background-color: greenyellow;
+    width: 250px;
+    height: 80px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+
+#naoPassou, #Passou {
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.20s ease;
+}
+
+#naoPassou {
+    background-color: red;
+}
+
+#Passou {
+    background-color: green;
+}
+
+#naoPassou:hover, #Passou:hover {
+    transform: scale(1.15);
+}
+
+
+.pass {
+    background-color: #d4edda; 
+    color: #155724; 
+}
+
+.fail {
+    background-color: #f8d7da; 
+    color: #721c24; 
+}
+
+
+@media (max-width: 600px) {
+    input[type="text"], #name {
+        width: 100%;
+    }
+
+    #res, #naoPassou, #Passou {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+h1 {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 20px;
+color:green 5D9E0F;
+}
